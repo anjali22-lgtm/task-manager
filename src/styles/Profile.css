@@ -1,0 +1,19 @@
+.profile-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Dark mode support */
+.dark-mode .profile-container {
+  background-color: #1f2937;
+  color: white;
+}
