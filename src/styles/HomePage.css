@@ -1,0 +1,130 @@
+.homepage-container {
+  font-family: Arial, sans-serif;
+  color: #1e3a8a;
+}
+
+/* Header */
+.homepage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.homepage-nav .nav-link {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.homepage-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f3f4f6;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3b82f6;
+}
+
+.btn-secondary {
+  background-color: #facc15;
+  color: #111;
+}
+
+.btn-secondary:hover {
+  background-color: #eab308;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #e0f2fe;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 220px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.homepage-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+/* Dark mode support */
+.dark-mode .homepage-container,
+.dark-mode .hero,
+.dark-mode .feature-card {
+  background-color: #1f2937;
+  color: white;
+}
+
+.dark-mode .btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.dark-mode .btn-secondary {
+  background-color: #fbbf24;
+  color: #111;
+}

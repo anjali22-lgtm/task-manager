@@ -1,0 +1,141 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e3a8a;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Left links */
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Right section layout */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Right links */
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Dark mode button */
+.dark-btn {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  background: #374151;
+}
+
+/* Logout button */
+.logout-btn {
+  background-color: #ef4444;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Active link highlight */
+.nav-left a.active,
+.nav-right a.active {
+  text-decoration: underline;
+  color: #facc15; /* Bright yellow for active */
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode span,
+.dark-mode label,
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background-color: #1f2937;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .task-card {
+  background-color: #1f2937;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #111827;
+}
+
+/* ------------------- MOBILE RESPONSIVE ------------------- */
+@media (max-width: 768px) {
+  .nav-left a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1e3a8a;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 10px;
+    display: none;
+    border-radius: 0 0 5px 5px;
+    z-index: 100;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+}
